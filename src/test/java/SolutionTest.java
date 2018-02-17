@@ -1,6 +1,8 @@
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Arrays;
+
 /**
  * filename:
  * project: solarDoomsday
@@ -11,17 +13,16 @@ public class SolutionTest {
     @Test
     public void testSolution() {
         int in = 12;
-        int[] out = {9, 1, 1, 1};
-        String expected = out.toString();
-        String actual = Solution.solarPanels(in).toString();
+        int[] expected = {9, 1, 1, 1};
+        int[] actual = Solution.solarPanels(in);
 
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals(Arrays.toString(expected), Arrays.toString(actual));
     }
 
     @Test
-    public void testClosestRoot() {
-        int expected = 9;
-        int actual = Solution.getHighestContainedSquare(12);
+    public void testGetClosestSquare() {
+        int expected = 4;
+        int actual = Solution.getClosestSquareRoot(13);
         Assert.assertEquals(expected, actual);
     }
 }

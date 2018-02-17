@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * filename:
  * project: solarDoomsday
@@ -6,10 +8,13 @@
  */
 public class Solution {
     public static int[] solarPanels(int src) {
-        return null;
+        int[] r = new int[0];
+
+        return r;
     }
 
-    public static int getHighestContainedSquare(int src) {
-        return 0;
+    public static int getClosestSquareRoot(int src) {
+        int r = (int)(Math.sqrt((double)src) + 0.5);
+        return r;
     }
 }
