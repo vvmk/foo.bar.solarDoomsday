@@ -24,7 +24,7 @@ public class Solution {
     }
 
     public static int getClosestSquareRoot(int src) {
-        int r = (int) (Math.sqrt((double) src) + 0.5);
+        int r = (int) (Math.sqrt((double) src) + 0.5); // add .5, cast to int. no need to round/floor
         return r;
     }
 }
